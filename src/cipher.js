@@ -9,10 +9,14 @@ const cipher = {
      return unionLetras
     },
     "decodificar": function (desplazamiento,palabra){
-        for (let i=0 ; i<palabra.length; i++) {
-            let posicionAsci = palabra.fromCharCode(i)
-            console.log (posicionAsci)
+        let unionLetras = ""
+        for (let i=0 ; i < palabra.length ; i++) {
+            let posicionAsci = palabra.charCodeAt(i)
+            let ubicacionAlfabeto = ((posicionAsci +65 - desplazamiento) % 26) + 65
+            unionLetras = unionLetras + String.fromCharCode(ubicacionAlfabeto)
+            
         }
+        return unionLetras
             //let letraDecodificada = ()
 
 
