@@ -2,13 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div id="banner">
+      <img src="imagenes/banner.png"  width="1320px"   height="250px"><br><br>
     </div>
-    <script src="index.js" type="module"></script>
+
+    <div id="desplazamiento">
+      <label> Elige el desplazamiento</label><br>
+      <input id="offset" type="number" name="offset" min="1" pattern="^[0-9]+" ><br><br>
+      <button class="boton" type="button" onclick="inicioCifrado()">Cifrar</button>
+      <button class="boton" onclick="inicioDecifrado()"  >Descifrar</button>
+    
+    </div>
+
+  <div class="caja1" >
+    <label>ABCDARIO</label><br>
+    <textarea id="cajaT1"  name="texto1" rows="20" cols="60"></textarea> <br>
+  </div>
+  <div class="caja2" >
+    <label>CIFRADO CESAR</label><br>
+    <textarea id="cajaT2" name="texto2" rows="20" cols="60" ></textarea>
+  </div>
+
+    <script src="index.js" type="module"></script> 
   </body>
 </html>
