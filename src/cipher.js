@@ -1,23 +1,28 @@
 const cipher = {
-    "codificar": function (desplazamiento,palabra){
+    encode: function (desplazamiento,palabra){
+        if ( typeof desplazamiento !== "number" || typeof palabra !== "string" ){
+            throw new TypeError('Error')
+        }
         let unionLetras ="" ;
         for (let i=0; i < palabra.length ; i++  ) {
-            console.log(palabra[i])
             let codigoAsci = palabra.charCodeAt(i)
             let letraCodificada =  ((codigoAsci - 65 + desplazamiento) % 26) + 65
             if (codigoAsci === 32) {
-                letraCodificada = 32
+                letraCodificada = 60
             }
             unionLetras  = unionLetras + String.fromCharCode(letraCodificada) 
       }
      return unionLetras
     },
-    "decodificar": function (desplazamiento,palabra){
+    decode: function (desplazamiento,palabra){
+        if ( typeof desplazamiento !== "number" || typeof palabra !== "string" ){
+            throw new TypeError('Error')
+        }
         let unionLetras = ""
         for (let i=0 ; i < palabra.length ; i++) {
             let posicionAsci = palabra.charCodeAt(i)
             let ubicacionAlfabeto = ((posicionAsci +65 - desplazamiento) % 26) + 65
-            if (posicionAsci === 32) {
+            if (posicionAsci === 60) {
                 ubicacionAlfabeto = 32
             }
             unionLetras = unionLetras + String.fromCharCode(ubicacionAlfabeto)

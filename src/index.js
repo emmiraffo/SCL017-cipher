@@ -11,7 +11,7 @@ var texto = document.getElementById("cajaT1").value;
 texto= texto.toUpperCase()
 var offset = document.getElementById("offset").value;
 offset = Number(offset)
-var textoCifrado = cipher.codificar(offset,texto) 
+var textoCifrado = cipher.encode(offset,texto) 
 document.getElementById("cajaT2").innerHTML= textoCifrado;
  }
  
@@ -20,7 +20,7 @@ function inicioDecifrado() {
     texto= texto.toUpperCase()
     var offset = document.getElementById("offset").value;
     offset = Number(offset)
-    var textoDecifrado = cipher.decodificar(offset,texto) 
+    var textoDecifrado = cipher.decode(offset,texto) 
     document.getElementById("cajaT2").innerHTML= textoDecifrado;
 
 }
