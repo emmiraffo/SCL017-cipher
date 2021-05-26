@@ -1,43 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merienda+One&display=swap');
+
 body{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
   text-align: center;
-  background-color: rgb(230, 230, 230);
+  background-color: rgba(252, 252, 252, 0.515);
+  margin: 0px;
+  position:fixed;
 
 }
 
 h2 { color: rgb(253, 0, 127);}
 
-.caja1{
-  padding: 30px;
-  margin: 20px;
-  height: 150px;
-  float: left;
-  padding: 0px;
-  margin-left: 200px;
+.contenedordecajas{
+display: flex;
+justify-content: space-evenly;
 
-
-}
-
-.caja2{
-  padding: 30px;
-  margin: 20px;
-  height: 150px;
-  float: right;
-  padding: 0px;
-  margin-right: 200px;
-  
 
 }
 
 .boton{
 background-color: rgb(233, 24, 128);
-color: yellow;
+color: rgb(255, 255, 255);
 font-size: 20px;
-border-radius: 10px
-
-
-
-
-
+border-radius: 10px;
+width: 100px;
 }
 
+.caja {
+background-color: rgb(99, 0, 157);
+border-radius: 12px;
+border-color: honeydew;
+font-family:'Merienda One', cursive ;
+color: snow;
+width: 100%;
+
+}
+label {
+font-family:'Merienda One', cursive;
+color:rgb(73, 3, 153)
+
+}

@@ -6,13 +6,13 @@ import cipher from './cipher.js';
 // Funcion  para pasar de una caja a otra por el evento onclick
 
 
- function inicioCifrado() {
-var texto = document.getElementById("cajaT1").value;
-texto= texto.toUpperCase()
-var offset = document.getElementById("offset").value;
-offset = Number(offset)
-var textoCifrado = cipher.encode(offset,texto) 
-document.getElementById("cajaT2").innerHTML= textoCifrado;
+function inicioCifrado() {
+    var texto = document.getElementById("cajaT1").value;
+    texto= texto.toUpperCase()
+    var offset = document.getElementById("offset").value;
+    offset = Number(offset)
+    var textoCifrado = cipher.encode(offset,texto) 
+    document.getElementById("cajaT2").innerHTML= textoCifrado;
  }
  
 function inicioDecifrado() {

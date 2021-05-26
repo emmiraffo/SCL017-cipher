@@ -31,14 +31,9 @@ const cipher = {
         return unionLetras
             //let letraDecodificada = ()
 
-
-        }
-       
+        }   
     }
-    
-
 //letras.charCodeAt(0)
-
 //String.fromCharCode(72)
 
 export default cipher
