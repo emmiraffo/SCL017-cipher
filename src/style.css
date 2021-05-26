@@ -1,42 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merienda+One&display=swap');
 
-body{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-  text-align: center;
-  background-color: rgba(252, 252, 252, 0.515);
-  margin: 0px;
-  position:fixed;
-
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.515);
+    margin: 0px;
+    position:fixed;
 }
 
-h2 { color: rgb(253, 0, 127);}
+h2 { 
+   color: rgb(253, 0, 127);
+}
 
 .contenedordecajas{
-display: flex;
-justify-content: space-evenly;
-
-
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.boton{
-background-color: rgb(233, 24, 128);
-color: rgb(255, 255, 255);
-font-size: 20px;
-border-radius: 10px;
-width: 100px;
+.boton {
+  background-color: rgb(233, 24, 128);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 10px;
+  width: 100px;
 }
 
 .caja {
-background-color: rgb(99, 0, 157);
-border-radius: 12px;
-border-color: honeydew;
-font-family:'Merienda One', cursive ;
-color: snow;
-width: 100%;
+  background-color: rgb(99, 0, 157);
+  border-radius: 12px;
+  border-color: honeydew;
+  font-family:'Merienda One', cursive ;
+  color: snow;
+  width: 100%;
 
 }
-label {
-font-family:'Merienda One', cursive;
-color:rgb(73, 3, 153)
 
+label {
+    font-family:'Merienda One', cursive;
+    color:rgb(73, 3, 153)
 }
