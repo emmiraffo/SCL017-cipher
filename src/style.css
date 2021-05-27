@@ -18,7 +18,7 @@ h2 {
 }
 
 .boton {
-  background-color: rgb(233, 24, 128);
+  background-color: rgb(255, 0, 119);
   color: rgb(255, 255, 255);
   font-size: 20px;
   border-radius: 10px;
@@ -26,7 +26,7 @@ h2 {
 }
 
 .caja {
-  background-color: rgb(99, 0, 157);
+  background-color: rgb(73, 3, 153);
   border-radius: 12px;
   border-color: honeydew;
   font-family:'Merienda One', cursive ;
