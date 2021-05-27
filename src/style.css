@@ -28,10 +28,12 @@ h2 {
 .caja {
   background-color: rgb(73, 3, 153);
   border-radius: 12px;
+  box-shadow: 5px 10px rgba(250, 240, 98, 0.707);
   border-color: honeydew;
   font-family:'Merienda One', cursive ;
   color: snow;
   width: 100%;
+
 
 }
 
