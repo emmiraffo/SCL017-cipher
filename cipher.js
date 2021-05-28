@@ -10,6 +10,9 @@ const cipher = {
             if (codigoAsci === 32) {
                 letraCodificada = 60
             }
+            if (codigoAsci === 209) {
+                letraCodificada = 35
+            }
             unionLetras  = unionLetras + String.fromCharCode(letraCodificada) 
       }
      return unionLetras
@@ -24,6 +27,9 @@ const cipher = {
             let ubicacionAlfabeto = ((posicionAsci +65 - desplazamiento) % 26) + 65
             if (posicionAsci === 60) {
                 ubicacionAlfabeto = 32
+            }
+            if (posicionAsci === 35) {
+                ubicacionAlfabeto = 209
             }
             unionLetras = unionLetras + String.fromCharCode(ubicacionAlfabeto)
             
