@@ -24,7 +24,6 @@ function inicioDescifrado() {
 function accionFinal1() {
    document.getElementById("mensaje").innerHTML = "Tu mensaje ya está cifrado"  
 }
-
 function accionFinal2() {
     document.getElementById("mensaje").innerHTML = "Tu mensaje ya está Descifrado"  
  }
