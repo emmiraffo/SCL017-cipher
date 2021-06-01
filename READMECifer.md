@@ -3,7 +3,7 @@
 ## 1. Realización del Proyecto
 ## Para iniciar este proyecto se pensó en encontrar la forma en que las usuarias pudiesen cifrar y descifrar su mensaje de manera sencilla y divertida. Para eso comencé diseñando un prototipo de baja fidelidad basado en una pantalla única donde los usuarios pudiesen interactuar con cajas de textos y botones para realizar cifrado-Decifrado según su necesidad y además pudiesen colocar el _offset_ de su interés.
 
-![Baja fidelidad](src/imagenes/prototipo.jpeg)
+![Baja fidelidad](imagenes/prototipo.jpeg)
 
 ## Teniendo en cuenta el diseño realizado, procedí a realizar una imagen que estaría en banner de la pagina, con colores atractivo para las chicas y que viasualmente resultara intuitivo conocer el funcionamiento de la página. 
 
