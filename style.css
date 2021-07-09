@@ -1,20 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin+Sketch:wght@700&family=Fascinate+Inline&display=swap');
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
     text-align: center;
-    background-color: rgba(252, 252, 252, 0.515);
-    margin: 0px;
-    position:fixed;
+    background: url(imagenes/f.gif);
+    background-repeat:repeat-y;
+    background-position:50%;
+    background-size:cover;
+
 }
 
-h2 { 
-   color: rgb(253, 0, 127);
+.img{
+  display: none;
 }
 
-.contenedordecajas{
+footer{
+  margin-left: 10px ;
+  color:rgb(89, 0, 255) ;
+  transform: rotate(-20deg); 
+  position:absolute; 
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgba(194, 18, 194, 0.726);
+}
+
+.offset{
+  margin-top: 5%;
+}
+
+.boxContainer{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 0%;
+}
+
+.caja {
+  background-color: rgba(255, 255, 255, 0.904);
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 15px rgba(250, 240, 98, 0.707);
+  border-color: honeydew;
+  color: rgb(0, 0, 0);
+  width: 80%;
+  height: 60%;
+}
+
+.textBoxTwo{
+  display: none;
+}
+
+.textBoxTwo .caja{
+  color:honeydew;
+  background-color: rgba(92, 86, 97, 0.883);
+}
+
+.boxContainer label{
+  font-family:'Merienda One', cursive;
+  font-size: 15px;
+  color: rgb(105, 4, 187);
 }
 
 .boton {
@@ -25,19 +70,46 @@ h2 {
   width: 100px;
 }
 
-.caja {
-  background-color: rgb(73, 3, 153);
-  border-radius: 12px;
-  box-shadow: 5px 10px rgba(250, 240, 98, 0.707);
-  border-color: honeydew;
-  font-family:'Merienda One', cursive ;
-  color: snow;
-  width: 100%;
-
-
+.boton:hover{
+  background-color: rgba(27, 27, 27, 0.685);
 }
 
-label {
-    font-family:'Merienda One', cursive;
-    color:rgb(73, 3, 153)
+.show{
+  display: block;
+}
+
+/*Visialización en Ipad*/
+@media only screen and (max-width:768px) and (min-width:360px ) {
+  .img{
+    display: block;
+    width: 100vw;
+    height: 20%;
+  }
+
+  body{
+    background-repeat:repeat-y;
+    background-position:center;
+    background-size:initial;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .boxContainer{
+    flex-direction: column;
+  }
+  
+  footer{
+    display: none;
+  }
+
+  .caja{
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .boxContainer label{
+    font-size: 15px;
+  }
+
 }
